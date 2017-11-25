@@ -6,7 +6,7 @@ namespace :dev do
 
     data["result"].each do |c|
       existing_city = City.find_by_juhe_id(c["id"])
-      if existing_city.nil?
+      if existing_city.nil?                         # NOTE: nil? method 
         City.create!(:juhe_id => c["id"], :province => c["province"],
                      :city => c["city"], :district => c["district"])
       end
