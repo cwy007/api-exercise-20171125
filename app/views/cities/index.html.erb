@@ -12,7 +12,10 @@
       <td><%= city.province %></td>
       <td><%= city.city %></td>
       <td><%= city.district %></td>
-      <td></td>
+      <td>
+        <%= city.current_temp %>
+        <%= link_to "更新温度", update_temp_city_path(city), :method => :post %>  <%# NOTE: 为什么用post而没有用put %>
+      </td>
     </tr>
   <% end %>
 </table>
