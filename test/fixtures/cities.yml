@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  juhe_id: MyString
+  province: MyString
+  city: 
+  district: MyString
+  current_temp: MyString
+
+two:
+  juhe_id: MyString
+  province: MyString
+  city: 
+  district: MyString
+  current_temp: MyString
